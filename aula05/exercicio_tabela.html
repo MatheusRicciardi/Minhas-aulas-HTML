@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title> Exercicio de tabelas</title>		
+	</head>	
+		<body>
+		<table border = "1" cellpadding = "5px" cellspacing = "0">
+		<tr>	
+			<td>L4C1</td>
+			<td>L4C3</td>
+			<td>L4C3</td>
+		</tr>	
+		<tr>
+			<td>L1C1</td>
+			<td colspan = "2" >L2C2</td>
+		</tr>
+		<tr>
+			<td colspan = "3">L2C1</td>		
+		</tr>
+		<tr>
+			<td colspan = "2"> L3C1</td>
+			<td> L3C3 </td>
+		</tr>
+		</table>
+		
+	<p>	</p>
+	
+		<table border = "1" cellpadding = "5px" cellspacing = "0">
+		<tr>	
+			<td> L1C1</td>
+			<td rowspan = "2"> L1C2 </td>
+			<td> L1C3 </td>
+		</tr>
+		<tr>
+			<td> L2C1 </td>
+			<!-- Celula 2 vem da primeira linha -->
+			<td> L2C3 </td>
+		</tr>	
+		</table>
+		
+	<p> </p>
+	<!-- Border para ajustar as bordas da tabela, cellpadding seria quanto ao tamanho da celula, e cellspacing ajusta o espaçamento das celulas-->
+		<table border = "1" cellpadding = "5px" cellspacing = "0">
+		<tr>
+			<td>L1C1</td>
+			<td>L2C2</td>
+			<td rowspan = "2"> L1C3 </td>
+		</tr>
+		<tr>
+			<td rowspan = "2"> L2C1 </td>
+			<td> L2C2 </td>
+		</tr>
+		<tr>
+			<td>L3C1 </td>
+			<td> L3C2 </td>
+		</tr>
+		</table>
+		
+		<p> </p>
+		
+		<table border = "1" cellpadding = "5px" cellspacing = "1">
+	<!--rowspan é usado para unir uma celula a outra na vertical, e colspan é usado para unir uma celula a outra horizontalmente-->
+		<tr>
+			<td rowspan = "4" bgcolor = "gray"> <b>L1<b> </td>
+			<td colspan = "3" bgcolor = "gray"> <center><b>L1C2<b><center> </td>			
+		</tr>
+		<tr>
+			<td> L2C2 </td>
+			<td> L2C3 </td>
+			<td> L2C4 </td>
+		</tr>
+		<tr>
+			<td> L3C2 </td>
+			<td colspan = "2"> <center>L3C3<center> </td>		
+		</tr>
+		<tr>
+			<td colspan = "3"> <center>L1C2<center> </td>
+		</tr>
+		
+		</table>
+		
+		</body>
+	
+	
+</html>	
