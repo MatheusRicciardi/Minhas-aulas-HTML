@@ -11,17 +11,35 @@
         <form action=" agendaDisney.php" method = "post"></form>
             RESORT : 
             <input type="text" name="resort" value = "Disney World Orlando" readonly>
-            <br/>  
+            <br>  
             SENHA : 
             <input type="password" name = "senha" maxlength="10">
-            <br/>
+            <br>
             PREENCHIMENTO: 1/5
             <progress max = "5" value = "1" step = "2"></progress>
             <hr>
             NOME DO RESPONSAVEL : 
             <input type="text" name = "responsavel" maxlength="80" size = "80" placeholder="Informe o nome completo">
-            <br/>
-            N&Ordm; de familiares (Incluindo crianças) : 
+            <br>
+            Ordem de familiares (Incluindo crianças) : 
             <input type="number" name = "familiares" min = "1" max ="99">
+            <br>
+            <fieldset>
+            <input type="radio" name = "sexo" value = "M"> Masculino
+            <br>
+            <input type="radio" name = "sexo" value = "F"> Feminino
+            </fieldset> 
+            EMAIL : 
+            <input type="email" name = "email" maxlength="100" size ="25" placeholder="Informe aqui o seu email">
+            <br>
+            <h3>Acesso ao Parque</h3>
+            Data da Visita : 
+            <input type="Date" name = "dataVisita" min = "2019-01-01" max = "2023-12-31" required>     
+            - Hora da Entrada
+            <input type="time" name = "horaVisita" min = "08:00:00"> <br>
+            
+            - Cor da Pulseira
+            <input type="color" name="corPulseira" value="#7F00FF">
+   
     </body>
 </html>
