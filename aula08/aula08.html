@@ -6,40 +6,97 @@
     </head>
     <body>
         <h1 align = "Center"> "Aula de formulario"</h1>
-        <hr/>
         <h2>Agendamento de atividas-Disney Wolrd</h2>
-        <form action=" agendaDisney.php" method = "post"></form>
+        <form 
+        action=" agendaDisney.php"
+        method = "post"
+        enctype = "multipart/form-data">
+
+        </form>
+        <br>
             RESORT : 
             <input type="text" name="resort" value = "Disney World Orlando" readonly>
-            <br>  
+            <hr/>
+           
             SENHA : 
-            <input type="password" name = "senha" maxlength="10">
-            <br>
+            <input type="password" name = "senha" maxlength="10" placeholder="Digite sua senha aqui">
+            <hr/>
+            
             PREENCHIMENTO: 1/5
             <progress max = "5" value = "1" step = "2"></progress>
-            <hr>
+            <hr/>
+
             NOME DO RESPONSAVEL : 
             <input type="text" name = "responsavel" maxlength="80" size = "80" placeholder="Informe o nome completo">
             <br>
+            <hr/>
             Ordem de familiares (Incluindo crianças) : 
             <input type="number" name = "familiares" min = "1" max ="99">
-            <br>
+            <hr/>
             <fieldset>
             <input type="radio" name = "sexo" value = "M"> Masculino
             <br>
             <input type="radio" name = "sexo" value = "F"> Feminino
             </fieldset> 
+            <br>
+
+            Foto da Familia : 
+
             EMAIL : 
             <input type="email" name = "email" maxlength="100" size ="25" placeholder="Informe aqui o seu email">
             <br>
             <h3>Acesso ao Parque</h3>
-            Data da Visita : 
-            <input type="Date" name = "dataVisita" min = "2019-01-01" max = "2023-12-31" required>     
-            - Hora da Entrada
-            <input type="time" name = "horaVisita" min = "08:00:00"> <br>
             
+            - Data da Visita : 
+            <input 
+                type="Date" 
+                name = "dataVisita" 
+                min = "2019-01-01" 
+                max = "2023-12-31" 
+                required> 
+            <br>
+
+            - Hora da Entrada
+            <input 
+                type="time" 
+                name = "horaVisita" 
+                min = "08:00:00"> 
+            <br>
+
             - Cor da Pulseira
-            <input type="color" name="corPulseira" value="#7F00FF">
-   
+            <input 
+                type="color" 
+                name="corPulseira" 
+                value="#7F00FF">
+            <br>
+
+            - Numero de atrações a visitar
+            <input 
+                type="range" 
+                name = "atraçoes" 
+                min = "1" 
+                max = "10"> 
+            <br>
+
+            - Foto da Familia : <!--Ao usar o file, deve-se adicionar a propriedade enctype no form-->
+            <input 
+                type="file" 
+                name="foto">
+            <br>
+            <h3>Preferecias de Comida</h3>
+            <textarea 
+                name="comida" 
+                placeholder="Insira aqui suas preferencias" 
+                cols="80" 
+                rows="3">Seu texto aqui
+            </textarea>
+            <h3>Voce concorda com os termos de uso?</h3>
+            <select name="aecite">
+                <option value="Concordo"> Concordo</option>
+                <option value="Discordo"> Discordo</option>
+            </select> 
+            <br/>
+
+            <input type="submit" value = "enviar">
     </body>
 </html>
