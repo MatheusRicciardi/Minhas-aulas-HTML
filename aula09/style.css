@@ -1,0 +1,50 @@
+p {
+    
+    /*margin-right: 10px;
+    margin-top: 20px; 
+    margin-left: 30px;
+    margin-bottom: 40px;  
+    padding-right: 10px; 
+    padding-left: 10px ;
+    padding-top: 10px ;
+    padding-bottom: 10px;*/
+    padding: 20px ;
+    background-color: aqua  ;
+    width:1000px;
+    margin: 20px auto;
+    border: 2px double blue; /* Dotted, dashed, solid, double */
+    border-radius: 10px;
+
+}
+
+body {
+    background-color: lightblue;
+    font-family: Arial;
+    font-size: 15px;  
+    text-align: center;  
+}
+
+p:hover {
+    color:red;
+    width: 1050px;
+    font-size: 20px;
+    cursor:grab;
+
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+img {
+    border: 5px solid black;
+    border-radius: 250px;
+    margin: 10px auto;
+    
+}
